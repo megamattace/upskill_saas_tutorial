@@ -13,6 +13,7 @@ gem 'uglifier', '3.0.0'
 gem 'coffee-rails', '4.2.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '4.1.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -23,6 +24,7 @@ gem 'jbuilder', '2.5.0'
 # gem 'redis', '3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '3.1.7'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -41,9 +43,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '2.0.0'
 end
+
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg', '0.18.4'
+  gem 'pg', '~> 0.18.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
